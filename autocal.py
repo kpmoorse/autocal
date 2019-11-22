@@ -110,11 +110,9 @@ class AutoCal(object):
     def add_events(self, events):
 
         title_list = [x["summary"] for x in self.event_list]
-        # print(title_list)
         count = 0
         for event in events:
             if event["summary"] not in title_list:
-                # print(event["summary"])
                 self.create_event(event)
                 count += 1
         print("{} new events created".format(count))

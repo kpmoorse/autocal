@@ -32,6 +32,7 @@ class GetEvents(object):
 
         self.events = events
 
+    # Convert CSS post format to Google Calendar API format
     @staticmethod
     def post_to_event(post):
 
